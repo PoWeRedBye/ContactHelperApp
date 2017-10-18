@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/contact_photo_detail"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.09"
+            android:scaleType="centerCrop"
+            android:src="@drawable/freepik" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:text="  Contact Detail"
+            android:textColor="#012"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/firstname_text_detail"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#012"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/phone_text_detail"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#012"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/email_text_detail"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="#012"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/detail_call_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/call_icon"
+                android:clickable="true" />
+
+            <Button
+                android:id="@+id/send_message_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/send_message"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/send_mail_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/gmail_logo_icon"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/back_view_contact_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#4948c1"
+            android:clickable="true"
+            android:text="back"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
+            android:text="update contact"
+            android:textSize="25sp"
+            android:background="#08ff00"
+            />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:text="delete contact"
+            android:textSize="25sp"
+            android:background="#ff0008"
+            />
+
+    </LinearLayout>
+</ScrollView>
